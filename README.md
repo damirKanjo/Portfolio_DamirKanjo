@@ -1,1 +1,3 @@
 # Portfolio_DamirKanjo
+
+Web page made to bring up informations about me, my skills, education, etc...
