@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <title>CV_DamirKanjo</title>
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="icon" type="image/x-icon" href="imgs/tab-icon.png">
+
+    </head>
+    <body>
+
+    <div class="container-fluid bg-light">
+      <div class="container expandNavBar">
+        <div class="row">
+
+          <div class="col-12 px-0">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <h1 class="navbar-brand" style="margin: 0 20px 0 0; padding: 0;"> <b>DK</b> </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <button class="nav-link bg-light" onclick="myFunction(1)"> ABOUT </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-link bg-light" onclick="myFunction(2)"> EDUCATION </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-link bg-light" onclick="myFunction(3)"> WORK EXPERIENCE </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-link bg-light" onclick="myFunction(4)"> SKILLS </button>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+          </div>
+
+
+          <div class="col-12 pb-3 pb-lg-5 px-0" id="message">
+            <h3> Greetings visitor! </h3>
+            <p> Hello there, welcome to my resume page, I am glad you came here to check more infos about me. Feel free to explore! </p>
+            <div class="btn btn-lg hide" id="cnt">
+              <p id="call" onmouseover="showIcons(10000)"> CONTACT ME </p>
+            </div>
+            <a href="tel:+381603121297"><div class="btn btn-lg tel btnstyle"> 
+              <i class="bi bi-telephone"></i>
+            </div></a>
+            <div class="btn btn-lg mail btnstyle"> 
+              <i class="bi bi-envelope-at"></i>
+            </div>
+            <div class="btn btn-lg viber btnstyle"> 
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <div class="btn btn-lg linkedin btnstyle"> 
+              <i class="bi bi-linkedin"></i>
+            </div>
+          </div> 
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid pt-4" style="background-color: rgb(11, 75, 99)">
+      <div class="container line"></div>
+    </div>
+
+
+
+    <div class="container-fluid my-4" style="background-color: white;">
+      <div class="container section">
+
+      </div>
+    </div>
+
+
+
+    <!-- ABOUT SECTION -->
+
+      <div class="content" id="about">
+        <div class="row py-3">
+          <h1 class="pb-3 myclr" style="border-bottom: 1px solid black; margin-bottom: 0px; text-align: center;">ABOUT</h1>
+          <div class="col-lg-2 px-0" style="background-color: #f5f5f5; display: flex; align-items: center;">
+            <div class="photo">
+  
+            </div>
+          </div>
+          <div class="col-lg-10" style="background-color: #f5f5f5;">
+            <h3 id="myName" style="padding-top: 13px;"> Damir Kanjo </h3>
+            <p> <i class="bi bi-geo-alt"></i> <b>Address:</b> Bulevar despota Stefana 5A, 21000, Novi Sad, Serbia </p>
+            <p> <i class="bi bi-envelope-at"></i> <b>Email:</b> damirkanjo@gmail.com </p>
+            <p> <i class="bi bi-telephone"></i> <b>Phone:</b> (+381)60 3 121297 </p>
+            <p> <i class="bi bi-gender-male"></i> <b>Gender:</b> Male </p>
+            <p> <i class="bi bi-cake2"></i> <b>Date of birth:</b> 12/12/1997 </p>
+          </div>
+          <div class="col-12 pt-3 px-0" style="border-top: 1px solid black;">
+            
+            <div id="frame">
+              <p style="text-align: center; margin-bottom: 5px;"> _____________ </p>
+              <p>
+                Hi! My name is Damir Kanjo and I'm Bachelor with Honours in Electrical Engineering and Computing, 
+                currently studying for Master's degree in electrical engineering at Faculty of Technical Sciences, University of Novi Sad.
+                I have left with one semester and Master thesis to accomplish degree.
+                I am open for full time job offers, whether they are remote or hybrid. 
+                Things I am interested about and what I am seeking for, are PLC programing, HW design, Embedded, jobs in automotive or jobs related to renewable sources - solar. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- EDUCATION SECTION -->
+
+      <div class="content" id="education">
+        <div class="row py-3">
+          <h1 class="pb-3 myclr" style="border-bottom: 1px solid black; margin-bottom: 0px; text-align: center;"> EDUCATION </h1>   
+
+          <div class="col-12 px-0">
+            <h2 class="myclr mt-5"> MASTER DEGREE </h2>
+            <div class="frame1">
+              <p> <b>Period :</b> [ 10/10/2022 – Current ]  </p>
+              <p> <b>Degree:</b> Master of Applied Science in Electrical and Computer Engineering </p>
+              <p> <b>Institution:</b> Faculty of technical sciences University of Novi Sad </p>
+              <p> <b>Official page:</b> <a href="http://www.ftn.uns.ac.rs/n1386094394/faculty-of-technical-sciences"> http://www.ftn.uns.ac.rs </a></p>
+              <p> <b>Address:</b> Trg Dositeja Obradovića 6, 21000, Novi Sad, Serbia </p>
+            </div>
+          </div>
+
+          <div class="col-12 my-5 px-0">
+            <h2 class="myclr"> BACHELOR DEGREE </h2>
+            <div class="frame1">
+              <p> <b>Period :</b> [ 27/09/2017 – 22/09/2020  ]  </p>
+              <p> <b>Degree:</b> Bachelor with Honours in Electrical Engineering and Computing  </p>
+              <p> <b>Institution:</b> Subotica Tech-College of Applied Sciences  </p>
+              <p> <b>Official page:</b> <a href="https://www.vts.su.ac.rs/en"> https://www.vts.su.ac.rs </a></p>
+              <p> <b>Address:</b> Marka Oreškovića 16, 24000, Subotica, Serbia  </p>
+            </div>
+          </div>
+
+          <div class="col-12 px-0">
+            <h2 class="myclr"> HIGH SCHOOL DEGREE </h2>
+            <div class="frame1">
+              <p> <b>Period :</b> [ 31/08/2012 – 30/06/2016   ]  </p>
+              <p> <b>Degree:</b> Mechatronic Technician </p>
+              <p> <b>Institution:</b> Secondary technical school Sombor   </p>
+              <p> <b>Official page:</b> <a href="https://tehnickaso.edu.rs/"> https://www.tehnickaso.edu.rs </a></p>
+              <p> <b>Address:</b> Marka Oreškovića 16, 24000, Subotica, Serbia  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- EXPERIENCE SECTION -->
+
+      <div class="content" id="experience">
+        <div class="row py-3">
+          <h1 class="pb-3 myclr" style="border-bottom: 1px solid black; margin-bottom: 0px; text-align: center;"> WORK EXPERIENCE </h1>
+
+
+          <div class="col-12 px-0">
+            <h2 class="myclr mt-5"> System Test Engineer - Intern  </h2>
+            <div class="frame1">
+              <p class="mb-5"> <b>Continental R&D center</b> </p>
+              <p> <b>Period :</b> [ 01/03/2023 – 31/08/2023 ]  </p>
+              <p> <b>City:</b> Novi Sad </p>
+              <p> <b>Country:</b> Serbia </p>
+              <ul>
+                <li>Writing test cases in DOORS for specific functionality;</li>
+                <li>Execution of written test cases;</li>
+                <li>Adapting and correcting old test cases;</li>
+                <li>Using diverse measurement equipment;</li>
+                <li>Soldering hardware components;</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 px-0">
+            <h2 class="myclr mt-5">  Automotive electrician   </h2>
+            <div class="frame1">
+              <p class="mb-5"> <b> BLACK JACK AUTOELEKTRIČARSKA ZANATSKA RADNJA </b> </p>
+              <p> <b>Period :</b> [ 01/07/2020 – 30/09/2022 ]  </p>
+              <p> <b>City:</b> Sombor </p>
+              <p> <b>Country:</b> Serbia </p>
+              <ul>
+                <li>Maintenance of cars and trucks alternator and motor starters;</li>
+                <li>Diagnostic and removal on circuit breakdowns or other electric issues;</li>
+                <li>Implementing relays to solve some electric malfunction;</li>
+                <li>Using diagnostic tools and circuit diagram software for better job performance (Delphi,Thinkdiag, AutoData);</li>
+                <li>Installation of additional equipment, trailer modules, camera, etc.;</li>
+                <li>Ordering spare parts and equipment;</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    <!-- SKILLS SECTION -->
+
+      <div class="content" id="skills">
+        <div class="row py-3">
+          <h1 class="pb-3 myclr" style="border-bottom: 1px solid black; margin-bottom: 0px; text-align: center;"> SKILLS </h1>
+
+          <div class="col-lg-4 mt-4">
+            <h4> LANGUAGE SKILLS ——— </h4>
+            <p><b> Mother tongue(s):</b> Serbian</p>
+            <p><b> Other language(s): :</b> English</p>
+            <p> <b>LISTENING</b> B2 <b>READING</b> B2 <b>WRITING</b> B2  </p>
+            <p> <b>SPOKEN PRODUCTION</b> B2 </p>
+            <p> <b>SPOKEN INTERACTION</b> B2  </p>
+          </div>
+          <div class="col-lg-4 mt-4">
+            <h4> DIGITAL SKILLS ——— </h4>
+            <ul class="ps-3">
+              <li> Altium Designer </li>
+              <li> Siemens TIA Portal </li>
+              <li> ANSI C </li>
+              <li> Arduino </li>
+              <li> PVSyst7.0</li>
+              <li> HTML/CSS/JS </li>
+              <li> Bootstrap 5 </li>
+              <li> Microsoft Excel</li>
+              <li> Microsoft Word </li>
+              <li> Microsoft Powerpoint </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mt-4">
+            <h4> DRIVING LICENCE ——— </h4>
+            <p> <b>Cars: </b>B1 </p>
+            <p> <b>Cars: </b>B </p>
+          </div>
+        </div>
+      </div>
+
+        
+      <script src="index.js"></script>
+    </body>
+</html>
