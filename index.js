@@ -19,10 +19,10 @@ function showIcons(y) {
 
 function hideIcons(x) {
     setTimeout(() => {
-        document.querySelector(".tel").style.left = "-150px";
-        document.querySelector(".mail").style.left = "-160px";
-        document.querySelector(".viber").style.left = "-170px";
-        document.querySelector(".linkedin").style.left = "-230px";
+        document.querySelector(".tel").style.left = "-100px";
+        document.querySelector(".mail").style.left = "-150px";
+        document.querySelector(".viber").style.left = "-200px";
+        document.querySelector(".linkedin").style.left = "-250px";
     }, x);
 }
 
@@ -62,6 +62,3 @@ function clear() {
     exp.style.display = 'none'; 
     skill.style.display = 'none';    
 }
-
-
-
