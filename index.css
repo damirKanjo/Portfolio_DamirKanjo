@@ -107,6 +107,11 @@ button.nav-link {
     color: white;
 }
 
+.hide {
+    background-color: rgb(48, 147, 79) !important;
+    border-color: antiquewhite;
+}
+
 #cnt {
     position: relative;
     opacity: 1;
@@ -123,7 +128,7 @@ button.nav-link {
 .btn:hover {
     transition: 0.25s;
     background: #4180ce;
-    border: 2px solid #0b478f;
+    border: 2px solid #0b0b0b;
     color: white;
 }
 
