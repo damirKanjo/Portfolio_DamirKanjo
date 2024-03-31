@@ -216,6 +216,20 @@ button.nav-link {
 }
 
 
+.download {
+    margin: 35px auto  15px auto !important;
+    max-width: 15rem !important;
+    padding: 10px 15px;
+    background-color: #0b0b0b;
+    color: goldenrod;
+}
+
+.download:hover {
+    background-color: #00decc;
+    color: rgb(0, 0, 0);
+    transition: 0.75s;
+}
+
 #about, #education, #experience, #skills {
     padding-top: 63px !important;
     display: none;
