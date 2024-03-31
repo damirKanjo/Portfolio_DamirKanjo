@@ -220,6 +220,7 @@ button.nav-link {
     margin: 35px auto  15px auto !important;
     max-width: 15rem !important;
     padding: 10px 15px;
+    text-decoration: none;
     background-color: #0b0b0b;
     color: goldenrod;
 }
