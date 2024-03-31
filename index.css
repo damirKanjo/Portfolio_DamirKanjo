@@ -108,7 +108,8 @@ button.nav-link {
 }
 
 .hide {
-    background-color: rgb(48, 147, 79) !important;
+    background-color: #0b0b0b !important;
+    color: goldenrod;
     border-color: antiquewhite;
 }
 
