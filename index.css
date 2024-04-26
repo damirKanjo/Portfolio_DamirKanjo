@@ -113,8 +113,7 @@ button.nav-link {
 }
 
 .hide {
-    background-color: #0b0b0b !important;
-    color: goldenrod;
+    color: rgb(245, 245, 245);
     border-color: antiquewhite;
 }
 
@@ -133,9 +132,9 @@ button.nav-link {
 
 .btn:hover {
     transition: 0.25s;
-    background: #4180ce;
-    border: 2px solid #0b0b0b;
-    color: white;
+    background-color: #3aafee !important;
+    border: 2px solid #ffffff;
+    color: rgb(255, 255, 255);
 }
 
 
