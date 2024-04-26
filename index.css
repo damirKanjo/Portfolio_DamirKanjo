@@ -29,6 +29,11 @@ video {
     margin: 0;
 }
 
+.nav-link{
+    background-color: transparent !important;
+    color: white;
+}
+
 @media screen and (max-width: 992px) {
     .navbar {
         padding: 35px 0 35px 0 !important;
