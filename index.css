@@ -29,14 +29,36 @@ video {
     margin: 0;
 }
 
+.navbar-brand{
+    margin-right: 80px !important;
+}
+
 .nav-link{
     background-color: transparent !important;
+    min-width: 200px;
+    color: white;
+    border: none;
+    margin-right: 30px;
+    text-align: left;
+    border-left: 1px solid white !important;
+}
+
+.nav-link:hover {
+    font-weight: 900;
     color: white;
 }
+
+button:focus{color:rgb(255, 255, 255) !important;}
 
 @media screen and (max-width: 992px) {
     .navbar {
         padding: 35px 0 35px 0 !important;
+    }
+    .navbar-brand{
+        margin-right: 30px !important;
+    }
+    button.navbar-toggler{
+        filter: invert(100%);
     }
     .expandNavBar {
         margin: 0 auto !important;
@@ -48,10 +70,14 @@ video {
         margin-top: 15px;
     }
     .nav-link {
+        margin: auto !important;
+        text-align: center !important;
+        border-left: none !important;
         width: 100%;
         height: 100%;
     }
     .nav-link:hover {
+        color: black !important;
         background-color: #f2f2f2 !important;
     }
     #message {
@@ -238,14 +264,13 @@ button.nav-link {
     margin: 35px auto  15px auto !important;
     max-width: 15rem !important;
     padding: 10px 15px;
-    text-decoration: none;
     background-color: #0b0b0b;
-    color: goldenrod;
+    color: #05c4e5 !important;
 }
 
 .download:hover {
-    background-color: #00decc;
-    color: rgb(0, 0, 0);
+    background-color: #05c4e5;
+    color: rgb(0, 0, 0) !important;
     transition: 0.75s;
 }
 
