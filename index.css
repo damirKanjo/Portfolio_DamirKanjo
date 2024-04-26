@@ -46,6 +46,7 @@ video {
 .nav-link:hover {
     font-weight: 900;
     color: white;
+    transition: 0.25s;
 }
 
 button:focus{color:rgb(255, 255, 255) !important;}
