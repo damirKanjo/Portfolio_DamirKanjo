@@ -21,9 +21,6 @@ video {
     background-color: #0b0b0b;
     opacity: 0.45;
 }
-.myclr {
-    color: rgb(11, 75, 99);
-}
 
 .row {
     margin: 0;
@@ -224,6 +221,8 @@ button.nav-link {
 .section {
     width: 100%;
     box-sizing: content-box;
+    background-color: transparent !important;
+    color: white;
 }
 
 .content {
@@ -246,7 +245,7 @@ button.nav-link {
 }
 
 #frame {
-    border: 1px solid black;
+    border: 1px solid white;
     max-width: 52rem;
     padding: 55px 15px;
     margin: auto;
@@ -254,7 +253,7 @@ button.nav-link {
 }
 
 .frame1 {
-    border: 1px solid black;
+    border: 1px solid white;
     width: 100%;
     padding: 30px;
     line-height: 1.3;
