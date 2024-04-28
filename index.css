@@ -46,7 +46,15 @@ video {
     transition: 0.25s;
 }
 
-button:focus{color:rgb(255, 255, 255) !important;}
+button:active{
+    color:rgb(255, 255, 255) !important;
+    font-weight: 900 !important;
+}
+
+button:focus{
+    color:rgb(255, 255, 255) !important;
+    font-weight: 900 !important;
+}
 
 #frame {
     border: 1px solid white;
