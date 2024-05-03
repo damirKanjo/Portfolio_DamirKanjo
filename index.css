@@ -102,6 +102,9 @@ button.close:hover {
 
 
 @media screen and (max-width: 992px) {
+    #frame {
+        padding: 50px 50px;
+    }
     .navbar {
         padding: 35px 0 35px 0 !important;
     }
