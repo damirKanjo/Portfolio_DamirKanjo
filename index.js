@@ -77,6 +77,13 @@ function myFunction(x) {
     }
 }
 
+
+const buttons = document.querySelectorAll('.close');
+buttons.forEach(button => {
+    button.addEventListener('click', clear);
+});
+
+
 function clear() {
     about.style.display = 'none'; 
     edu.style.display = 'none'; 
