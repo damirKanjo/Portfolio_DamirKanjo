@@ -1,201 +1,211 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <title>CV_DamirKanjo</title>
+    <title>Damir Kanjo</title>
 
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="icon" type="image/x-icon" href="imgs/tab-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="education.css">
+    <link rel="stylesheet" href="experience.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="imgs/icon_tab.jpg">
 
-    </head>
-    <body>
+  </head>
+
+  <body>
 
     <video autoplay muted loop>
-        <source src="./imgs/vecteezy_colorful-glitter-lights-sparkle-squares-futuristic_27961929.mp4" type="video/mp4">
+      <source src="./imgs/vecteezy_colorful-glitter-lights-sparkle-squares-futuristic_27961929.mp4" type="video/mp4">
     </video>
 
-    <div class="mate">
+    <div class="mate">  
 
-    </div>
+      <div class="container-fluid text-light p-0">
+        
+        <div class="expandNavBar">
 
-    <div class="container-fluid text-light">
-      <div class="container expandNavBar">
-        <div class="row">
-
-          <div class="col-12 px-0">
-            <nav class="navbar navbar-expand-lg">
-                <h1 class="navbar-brand text-white" style="margin: 0 20px 0 0; padding: 0;"> <b>DK</b> </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav text-white">
-                    <li class="nav-item">
-                      <button class="nav-link" onclick="myFunction(1)"> ABOUT </button>
-                    </li>
-                    <li class="nav-item">
-                      <button class="nav-link" onclick="myFunction(2)"> EDUCATION </button>
-                    </li>
-                    <li class="nav-item">
-                      <button class="nav-link" onclick="myFunction(3)"> WORK EXPERIENCE </button>
-                    </li>
-                    <li class="nav-item">
-                      <button class="nav-link" onclick="myFunction(4)"> SKILLS </button>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-          </div>
-
-
-          <div class="col-12 pb-3 pb-lg-5 px-0" id="message">
-            <h3> Greetings visitor! </h3>
-            <p> Hello there, welcome to my resume page, I am glad you came here to check more information about me. Feel free to explore! </p>
-            <div class="btn btn-lg hide" id="cnt">
-              <p id="call" onmouseover="showIcons(10000)"> CONTACT ME </p>
+          <nav class="navbar navbar-expand-lg container py-0">
+            <h1 class="navbar-brand brand"> DK </h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav text-white">
+                <li class="nav-item">
+                  <button class="btn nav-link nav-btn" onclick="showAbout()"> 
+                    ABOUT 
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn nav-link nav-btn" onclick="showEducation()"> 
+                    EDUCATION 
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn nav-link nav-btn" onclick="showExperience()"> 
+                    WORK EXPERIENCE 
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn nav-link nav-btn" onclick="showSkills()">  
+                    SKILLS 
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn nav-link nav-btn" type="button" 
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" 
+                    aria-controls="offcanvasTop">
+                    PROJECTS 
+                  </button>
+                </li>
+              </ul>
             </div>
-            <a href="tel:+381603121297" class="btn btn-lg tel btnstyle"> 
-              <i class="bi bi-telephone"></i>
-            </a>
-            <a href="mailto: damirkanjo@gmail.com" div class="btn btn-lg mail btnstyle"> 
-              <i class="bi bi-envelope-at"></i>
-            </a>
-            <a href="viber://chat?numbeer=+381603121297" class="btn btn-lg viber btnstyle"> 
-              <i class="bi bi-whatsapp"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/damir-kanjo-b235b81aa/" class="btn btn-lg linkedin btnstyle"> 
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div> 
+          </nav>
+
+        
+
+          <div class="typewriter container">
+            <p> Welcome! </p>
+          </div>
           
+
         </div>
-      </div>
-    </div>
-
-
-
-    <div class="container-fluid pt-4">
-      <div class="container line"></div>
-    </div>
-
-
-
-    <div class="container-fluid my-4">
-      <div class="container section">
 
       </div>
-    </div>
 
 
 
-    <!-- ABOUT SECTION -->
 
-      <div class="content" id="about">
-        <div class="row py-3">
-          <div class="col-11 px-0">
-            <h1 class="pb-3 myclr" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 0px; text-align: center;"> ABOUT </h1>
-          </div>
-          <div class="col-1 px-0" style="border-bottom: 1px solid white;">
-            <button class="close"><h1>&times</h1></button>
-          </div>
-          <div class="col-lg-2 px-0" style="display: flex; align-items: center;">
-            <div class="photo">
-  
+      <!-- ABOUT SECTION -->
+
+      <div class="container about">
+    
+        <div class="downloadFrame" style="box-sizing: content-box;">
+          <a class="download" href="./DamirKanjo_CV.pdf" download="DamirKanjo_CV">
+            <b>DOWNLOAD CV</b> <i class="bi bi-file-earmark-arrow-down"></i>
+          </a>
+        </div>
+
+        <div class="container-fluid p-0" style="height: 100%">
+        
+          <div class="row" style="height: 100%;">
+            <div class="col-lg-5 px-0 mx-0">
+              <div class="img">
+                <div style="position: relative; width: 100%; height: 272px; background-color: #000000; opacity: 0.32; border-radius: 50px 50px 0 0;"></div>
+              </div>
+            </div>
+            <div class="col-lg-7 px-0 mx-0 center" style="color: #fff; font-size: 18px">
+              <h3 id="myName"> Damir Kanjo </h3>
+              <div class="centerTxt">
+                <p class="black"> <i class="bi bi-about bi-geo-alt"></i> <b>Address:</b> 31000, Osijek, Croatia </p>
+                <p class="black"> <i class="bi bi-about bi-envelope-at"></i> <b>Email:</b> damirkanjo@gmail.com </p>
+                <p class="black"> <i class="bi bi-about bi-telephone"></i> <b>Phone:</b> +381 60 3121297 </p>
+                <p class="black"> <i class="bi bi-about bi-gender-male"></i> <b>Gender:</b> Male </p>
+                <p class="black"> <i class="bi bi-about bi-cake2"></i> <b>Date of birth:</b> 12/12/1997 </p>
+              </div>
+            </div>
+            <div class="col-12 dno">
+              <p style="text-align: center; margin-bottom: 15px;"> _____________ </p>
+              <p style="text-align: justify; font-size: 19px">
+                Hi! My name is Damir Kanjo and I have Master's degree in electrical engineering at Faculty of Technical Sciences, University of Novi Sad. 
+                Things I am interested about, are Electronics, HW design, Embedded systems, PLC programming, Automotive industry, etc. Upon Bachelor's 
+                degree in 2020, I have worked on automotive related jobs during which I've acquired technical knowleadge as well as 
+                practical and bussiness skills. During this period and further education I've used a range of languages and softwares as well 
+                as experiencing the system development life cycle. Specialising in automotive industry.
+              </p>
             </div>
           </div>
-          <div class="col-lg-10">
-            <h3 id="myName" style="padding-top: 13px;"> Damir Kanjo </h3>
-            <p> <i class="bi bi-geo-alt"></i> <b>Address:</b> 21000, Novi Sad, Serbia </p>
-            <p> <i class="bi bi-envelope-at"></i> <b>Email:</b> damirkanjo@gmail.com </p>
-            <p> <i class="bi bi-telephone"></i> <b>Phone:</b> (+381)60 3 121297 </p>
-            <p> <i class="bi bi-gender-male"></i> <b>Gender:</b> Male </p>
-            <p> <i class="bi bi-cake2"></i> <b>Date of birth:</b> 12/12/1997 </p>
-          </div>
-          <div class="col-12 pt-3 px-0" style="border-top: 1px solid white;">
-            
-            <div id="frame">
-              <p style="text-align: center; margin-bottom: 5px;"> _____________ </p>
-              <p>
-                Hi! My name is Damir Kanjo and I have Master's degree in electrical engineering at Faculty of Technical Sciences, University of Novi Sad.
-                I am open for full time job offers, whether they are remote, office or hybrid. 
-                Things I am interested about and what I am seeking for, are Electronic related jobs, HW design, 
-                Embedded, PLC programming, jobs in Automotive, and others that matches my education.
-             </p>
-            </div>
-          </div>
-
-            <a class="download" href="./DamirKanjo_CV.pdf" download="DamirKanjo_CV" style="text-decoration: none;">
-                <i class="bi bi-file-earmark-arrow-down"></i> Download CV in pdf form
-            </a>
-              
         </div>
       </div>
 
 
-    <!-- EDUCATION SECTION -->
 
-      <div class="content" id="education">
-        <div class="row py-3">
-          <div class="col-11 px-0">
-            <h1 class="pb-3 myclr" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 0px; text-align: center;"> EDUCATION </h1>
-          </div>
-          <div class="col-1 px-0" style="border-bottom: 1px solid white;">
-            <button class="close"><h1>&times</h1></button>
-          </div>  
-          <div class="col-12 px-0">
-            <h2 class="myclr mt-5"> MASTER DEGREE </h2>
-            <div class="frame1">
-              <p> <b>Period :</b> [ 10/10/2022 – Current ]  </p>
+      <!-- EDUCATION SECTION -->
+
+
+      <div class="education">
+        <div class="content">
+          <ul class="timeline">
+
+            <li class="event ev1" data-date="[ 10/10/2022 – 16/09/2024 ]">
+              <h3> MASTER DEGREE </h3>
               <p> <b>Degree:</b> Master of Applied Science in Electrical and Computer Engineering </p>
               <p> <b>Institution:</b> Faculty of technical sciences University of Novi Sad </p>
               <p> <b>Official page:</b> <a href="http://www.ftn.uns.ac.rs/n1386094394/faculty-of-technical-sciences"> http://www.ftn.uns.ac.rs </a></p>
               <p> <b>Address:</b> Trg Dositeja Obradovića 6, 21000, Novi Sad, Serbia </p>
-            </div>
-          </div>
+            </li>
 
-          <div class="col-12 my-5 px-0">
-            <h2 class="myclr"> BACHELOR DEGREE </h2>
-            <div class="frame1">
-              <p> <b>Period :</b> [ 27/09/2017 – 22/09/2020  ]  </p>
-              <p> <b>Degree:</b> Bachelor with Honours in Electrical Engineering and Computing  </p>
+            <li class="event ev2" data-date="[ 27/09/2017 – 22/09/2020 ]">
+              <h3> BACHEROL DEGREE</h3>
+              <p> <b>Degree:</b> Bachelor of Electrical and Computer Engineering </p>
               <p> <b>Institution:</b> Subotica Tech-College of Applied Sciences  </p>
               <p> <b>Official page:</b> <a href="https://www.vts.su.ac.rs/en"> https://www.vts.su.ac.rs </a></p>
               <p> <b>Address:</b> Marka Oreškovića 16, 24000, Subotica, Serbia  </p>
-            </div>
-          </div>
-
-          <div class="col-12 px-0">
-            <h2 class="myclr"> HIGH SCHOOL DEGREE </h2>
-            <div class="frame1">
-              <p> <b>Period :</b> [ 31/08/2012 – 30/06/2016   ]  </p>
+            </li>
+                
+            <li class="event ev3" data-date="[ 31/08/2012 – 30/06/2016 ]" style="border-bottom: none; padding-bottom: 20px;">
+              <h2> HIGH SCHOOL DEGREE </h2>
               <p> <b>Degree:</b> Mechatronic Technician </p>
               <p> <b>Institution:</b> Secondary technical school Sombor   </p>
               <p> <b>Official page:</b> <a href="https://tehnickaso.edu.rs/"> https://www.tehnickaso.edu.rs </a></p>
-              <p> <b>Address:</b> Marka Oreškovića 16, 24000, Subotica, Serbia  </p>
+              <p> <b>Address:</b> Trg cara Lazara 4, 25000, Sombor, Serbia  </p>
+            </li>
+
+          </ul>
+          </div>
+      </div>
+
+  
+      <!-- EXPERIENCE SECTION -->
+
+      <section class="container experience">
+
+        <div class="tl-item">
+          <div class="tl-bg"> 
+
+          </div>
+
+          <div class="tl-year">
+            <p class="f2">2025</p>
+          </div>
+        
+          <div class="tl-content">
+            <h1 class="f3"> Test Develop Engineer  </h1>
+
+            <div class="frame1">
+              <p class="mb-5"> <b>Jabil</b> </p>
+              <p> <b>Period :</b> [ 15/01/2025 – current ]  </p>
+              <p> <b>City:</b> Osijek </p>
+              <p> <b>Country:</b> Croatia </p>
+              <ul>
+                <li>Development of test solutions;</li>
+              </ul>
             </div>
+
           </div>
         </div>
-      </div>
-    
-    <!-- EXPERIENCE SECTION -->
+        
+        <div class="tl-item">
+          <div class="tl-bg">   
 
-      <div class="content" id="experience">
-        <div class="row py-3">
-          <div class="col-11 px-0">
-            <h1 class="pb-3 myclr" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 0px; text-align: center;"> WORK EXPERIENCE </h1>
           </div>
-          <div class="col-1 px-0 " style="border-bottom: 1px solid white;">
-            <button class="close"><h1>&times</h1></button>
+          
+          <div class="tl-year">
+            <p class="f2">2023</p>
           </div>
-          <div class="col-12 px-0">
-            <h2 class="myclr mt-5"> System Test Engineer - Intern  </h2>
+        
+          <div class="tl-content">
+            <h1 class="f3"> System Test Engineer - Intern  </h1>
+
             <div class="frame1">
               <p class="mb-5"> <b>Continental R&D center</b> </p>
               <p> <b>Period :</b> [ 01/03/2023 – 31/08/2023 ]  </p>
@@ -210,11 +220,22 @@
               </ul>
             </div>
           </div>
+        </div> 
+        
+        <div class="tl-item">
+          <div class="tl-bg">  
+            
+          </div>
+          
+          <div class="tl-year">
+            <p class="f2">2022</p>
+          </div>
+        
+          <div class="tl-content">
+            <h1 class="f3"> Automotive technician </h1>
 
-          <div class="col-12 px-0">
-            <h2 class="myclr mt-5">  Automotive electrician   </h2>
             <div class="frame1">
-              <p class="mb-5"> <b> BLACK JACK AUTOELEKTRIČARSKA ZANATSKA RADNJA </b> </p>
+              <p class="mb-5"> <b> BLACK JACK </b> </p>
               <p> <b>Period :</b> [ 01/07/2020 – 30/09/2022 ]  </p>
               <p> <b>City:</b> Sombor </p>
               <p> <b>Country:</b> Serbia </p>
@@ -228,59 +249,143 @@
               </ul>
             </div>
           </div>
-
         </div>
-      </div>
+
+      </section>
 
 
 
+      <!-- SKILLS SECTION -->
 
-    <!-- SKILLS SECTION -->
+      <div class="container skills">
+        <div class="row">
+  
+          <div class="col-lg-4 mt-4 move">
 
-      <div class="content" id="skills">
-        <div class="row py-3">
-          <div class="col-11 px-0">
-            <h1 class="pb-3 myclr" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 0px; text-align: center;"> SKILLS </h1>
+            <div class="card">
+              <h5 class="card-header" style="text-align: center;"> ——— LANGUAGE SKILLS ——— </h5>
+              <div class="card-body">
+                <p><b> Mother tongue(s):</b> Serbian</p>
+                <p><b> Other language(s): :</b> English</p>
+                <p> <b>LISTENING</b> B2 <b>READING</b> B2 <b>WRITING</b> B2  </p>
+                <p> <b>SPOKEN PRODUCTION</b> B2 </p>
+                <p> <b>SPOKEN INTERACTION</b> B2  </p>
+              </div>
+            </div>
+            
           </div>
-          <div class="col-1 px-0" style="border-bottom: 1px solid white;">
-            <button class="close"><h1>&times</h1></button>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <h4> LANGUAGE SKILLS ——— </h4>
-            <p><b> Mother tongue(s):</b> Serbian</p>
-            <p><b> Other language(s): :</b> English</p>
-            <p> <b>LISTENING</b> B2 <b>READING</b> B2 <b>WRITING</b> B2  </p>
-            <p> <b>SPOKEN PRODUCTION</b> B2 </p>
-            <p> <b>SPOKEN INTERACTION</b> B2  </p>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <h4> DIGITAL SKILLS ——— </h4>
-            <ul class="ps-3">
-              <li> Altium Designer </li>
-              <li> Siemens TIA Portal </li>
-              <li> Siemens SIMARIS </li>
-              <li> EPLAN </li>
-              <li> ETAP </li>
-              <li> AutoCAD </li>
-              <li> ANSI C </li>
-              <li> Arduino </li>
-              <li> PVSyst7.0</li>
-              <li> HTML/CSS/JS </li>
-              <li> Bootstrap 5 </li>
-              <li> Microsoft Excel</li>
-              <li> Microsoft Word </li>
-              <li> Microsoft Powerpoint </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <h4> DRIVING LICENCE ——— </h4>
-            <p> <b>Cars: </b>B1 </p>
-            <p> <b>Cars: </b>B </p>
-          </div>
-        </div>
-      </div>
 
+          <div class="col-lg-4 mt-4 move">
+
+            <div class="card">
+              <h5 class="card-header" style="text-align: center;"> ——— DIGITAL SKILLS ——— </h5>
+              <div class="card-body">
+                <ul class="ps-3" style="list-style: none;">
+                  <li> Altium Designer </li>
+                  <li> Siemens TIA Portal </li>
+                  <li> Matlab/Simulink </li>
+                  <li> LTspice</li>
+                  <li> PVSyst 7.0</li>
+                  <li> ANSI C </li>
+                  <li> HTML/CSS/JS </li>
+                  <li> Bootstrap 5 </li>
+                  <li> Microsoft Office </li>
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+
+          <div class="col-lg-4 mt-4 move">
+
+            <div class="card">
+              <h5 class="card-header" style="text-align: center;"> ———DRIVING LICENCE ——— </h5>
+              <div class="card-body">
+                <p> <b>Cars: </b>B1 </p>
+                <p> <b>Cars: </b>B </p>
+              </div>
+            </div>
         
-      <script src="index.js"></script>
-    </body>
+          </div>
+
+        </div>
+      </div>
+          
+          
+      <!-- PROJECTS SECTION -->
+
+
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100%; transition: 1.5s; background-color: #000000;">
+
+        <div class="projects" id="projects">
+          <div class="row py-3">
+
+            <div class="col-12 px-0">
+              <h1 class="mb-5" style="text-align: center; color: #F0EDE5; padding: 0;"> PROJECTS </h1>
+            </div>
+
+          </div>
+
+          <div class="container" style="overflow-y: scroll !important;">
+            <div class="example" onclick="location.href='https://damirkanjo.github.io/Website/';">
+              <h2 class="h2" style="text-align: center; padding-top: 30px;">Website for local business</h2>
+              <p id="paragraf"><b>Used technologies</b></p>
+              <ul class="row" style="text-align: center; list-style: none; padding: 0; color: aqua;">
+                <li class="col-12">BOOTSTRAP 5</li>
+                <li class="col-12">HTML</li>
+                <li class="col-12">CSS</li>
+              </ul>
+            </div>
+            <div class="example" onclick="location.href='https://damirkanjo.github.io/TicTacToe/';">
+              <h2 class="h2" style="text-align: center; padding-top: 30px;">TicTacToe game</h2>
+              <p id="paragraf"><b>Used technologies</b></p>
+              <ul class="row" style="text-align: center; list-style: none; padding: 0; color: aqua;">
+                <li class="col-12">JAVA SCRIPT</li>
+                <li class="col-12">HTML</li>
+                <li class="col-12">CSS</li>
+              </ul>
+            </div>
+            <div class="example" onclick="location.href='https://damirkanjo.github.io/MathGame/';">
+              <h2 class="h2" style="text-align: center; padding-top: 30px;">Simple math game</h2>
+              <p id="paragraf"><b>Used technologies</b></p>
+              <ul class="row" style="text-align: center; list-style: none; padding: 0; color: aqua;">
+                <li class="col-12">JAVA SCRIPT</li>
+                <li class="col-12">HTML</li>
+                <li class="col-12">CSS</li>
+              </ul>
+            </div>
+
+
+            <div class="container-fluid" style="text-align: center;">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+        
+
+      <div class="col-10 pb-3 pb-lg-5 px-0 message">
+      
+        <div class="container ribbon">  </div>
+        
+        <a href="tel:+381603121297" class="btn btn-lg"> 
+          <i class="bi bi-telephone"></i>
+        </a>
+        <a href="mailto: damirkanjo@gmail.com" class="btn btn-lg"> 
+          <i class="bi bi-envelope-at"></i>
+        </a>
+        <a href="viber://chat?numbeer=+381603121297" class="btn btn-lg"> 
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/damir-kanjo-b235b81aa/" class="btn btn-lg"> 
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+
+    </div>
+          
+    <script src="index.js"></script>
+  </body>
 </html>

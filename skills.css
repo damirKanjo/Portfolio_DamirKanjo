@@ -1,0 +1,91 @@
+.skills {
+    display: none;
+    position: relative;
+    top: 140px;
+}
+
+.card{
+    height: 295px;
+    color: #F0EDE5;
+    background-color: #000000;
+    opacity: 0.92;
+    animation: pulsate1 0.15s ease-in-out infinite alternate; 
+    transition: 0.55s ease-in-out;
+    box-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      inset 0 0 1.3rem #F0EDE5; 
+}
+
+.card:hover {
+    transition: 0.55s ease-in-out;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.card-header{
+    border-color: #F0EDE5;
+}
+
+@keyframes apear1 {
+    from{
+      opacity: 0;
+      text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px #F0EDE5,
+          0 0 80px #F0EDE5,
+          0 0 90px #F0EDE5,
+          0 0 100px #F0EDE5,
+          0 0 150px #F0EDE5;
+    }
+    25%{
+        opacity: 0.2;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    to{
+        opacity: 1;
+        text-shadow: none;
+    }
+}
+
+@keyframes pulsate1 {
+    
+    100% {
+        box-shadow:
+        0 0 4px #663399,
+        0 0 13px #663399,
+        inset 0 0 1.3rem #663399; 
+    }
+  
+    0% {
+        box-shadow:
+        0 0 4px #663399,
+        0 0 10px #663399,
+        inset 0 0 1.3rem #663399; 
+    }
+}
+
+.move{
+    position: relative;
+}
+
+@keyframes slide-bottom{
+    from{
+        top: 250px;
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.1;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    to{
+        top: 0px;
+        opacity: 1;
+    }
+}
